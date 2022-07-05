@@ -139,7 +139,7 @@ jobs:
       name: prod
       url: ${{ steps.prod-deploy.outputs.webapp-url }}
     runs-on: ubuntu-latest
-    needs: stg
+    needs: staging
 
     env:
       ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
